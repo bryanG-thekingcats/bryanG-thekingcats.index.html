@@ -1,0 +1,289 @@
+
+:root {
+    --titicaca-blue: #1b4d7d;
+    --titicaca-blue-soft: #2d73a5;
+    --candelaria-gold: #f4b41a;
+    --candelaria-gold-soft: #f7ce59;
+    --earth-red: #8b3a3a;
+    --stone-grey: #6f6f6f;
+    --pixel-border: 4px solid #000;
+    --pixel-border-soft: 3px solid #000;
+    --card-bg: #d5ddd0;
+    --shadow: 0 6px 0 rgba(0,0,0,0.35);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.03rem;
+    transition: background-color 0.35s ease, color 0.35s ease;
+    padding-top: 76px;
+}
+
+body.day-mode {
+    background:
+        radial-gradient(circle at top, rgba(244, 180, 26, 0.18), transparent 25%),
+        linear-gradient(180deg, #8cb8dd 0%, #6ca4cf 45%, #4f8abb 100%);
+    color: #1f2c3f;
+}
+
+body.night-mode {
+    background:
+        radial-gradient(circle at top, rgba(34, 64, 102, 0.55), transparent 30%),
+        linear-gradient(180deg, #020b18 0%, #07122a 40%, #030912 100%);
+    color: #f4f5f8;
+}
+
+body.day-mode .pixel-card,
+body.day-mode .accordion-item,
+body.day-mode .modal-content,
+body.day-mode .form-control,
+body.day-mode .form-select,
+body.day-mode .form-range {
+    background-color: rgba(235, 243, 240, 0.95);
+    color: #1f2c3f;
+}
+
+body.night-mode .pixel-card,
+body.night-mode .accordion-item,
+body.night-mode .modal-content,
+body.night-mode .form-control,
+body.night-mode .form-select,
+body.night-mode .form-range {
+    background-color: rgba(10, 19, 38, 0.92);
+    color: #f4f5f8;
+}
+
+h1, h2, h3, .pixel-title {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+}
+
+.hero-section {
+    min-height: calc(100vh - 76px);
+    display: flex;
+    align-items: center;
+}
+
+.pixel-navbar {
+    background-color: var(--stone-grey);
+    border-bottom: var(--pixel-border);
+    box-shadow: 0 4px 0 rgba(0,0,0,0.5);
+}
+
+.pixel-navbar .navbar-brand,
+.pixel-navbar .nav-link,
+.pixel-navbar .badge {
+    color: #fff !important;
+}
+
+.pixel-brand {
+    font-family: 'VT323', monospace;
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+}
+
+.nav-link {
+    font-weight: 700;
+    margin-right: 0.25rem;
+}
+
+.pixel-card,
+.accordion-item,
+.modal-content,
+.form-control,
+.form-select,
+.form-range {
+    border-radius: 0 !important;
+    border: var(--pixel-border) !important;
+    box-shadow: inset -4px -4px 0 rgba(0,0,0,0.18), inset 4px 4px 0 rgba(255,255,255,0.38);
+}
+
+.pixel-card {
+    background-color: var(--card-bg);
+    color: #000;
+}
+
+.pixel-card img {
+    border: 3px solid #000;
+    border-radius: 0;
+}
+
+.btn-pixel,
+.btn-pixel-primary {
+    border-radius: 0 !important;
+    border: 3px solid #000 !important;
+    box-shadow: inset -3px -3px 0 rgba(0,0,0,0.24), inset 3px 3px 0 rgba(255,255,255,0.55);
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.btn-pixel {
+    background-color: var(--stone-grey);
+    color: #fff;
+}
+
+.btn-pixel:hover,
+.btn-pixel:focus-visible {
+    background-color: #575757;
+    color: #fff;
+}
+
+.btn-pixel-primary {
+    background-color: var(--candelaria-gold);
+    color: #000;
+}
+
+.btn-pixel-primary:hover,
+.btn-pixel-primary:focus-visible {
+    background-color: #de9f0d;
+    color: #000;
+}
+
+.pixel-badge,
+.pixel-badge-soft {
+    font-family: 'VT323', monospace;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    background-color: var(--titicaca-blue);
+    color: #fff;
+    border: 2px solid #000;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.28);
+}
+
+.pixel-badge-soft {
+    background-color: var(--earth-red);
+}
+
+.eyebrow {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--earth-red);
+    margin-bottom: 0.25rem;
+}
+
+.section-heading .lead {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hero-stats .stat-box {
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat-number {
+    font-family: 'VT323', monospace;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--earth-red);
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.pixel-carousel {
+    border: var(--pixel-border);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.pixel-carousel img {
+    height: 540px;
+    object-fit: cover;
+}
+
+#filtrosDestinos .btn {
+    border-radius: 0 !important;
+    border: 2px solid #000 !important;
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+}
+
+.destino-card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.destino-card .card-text {
+    min-height: 4rem;
+}
+
+.accordion-button {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 0 !important;
+    border-bottom: 2px solid #000;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--candelaria-gold-soft);
+    color: #000;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.pixel-modal .modal-header {
+    border-bottom: 2px solid #000;
+    background-color: rgba(0,0,0,0.12);
+}
+
+.pixel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.pixel-item {
+    border: 2px solid #000;
+    padding: 0.85rem 1rem;
+    background-color: rgba(255,255,255,0.24);
+    box-shadow: inset -2px -2px 0 rgba(0,0,0,0.22), inset 2px 2px 0 rgba(255,255,255,0.34);
+}
+
+.pixel-footer {
+    background-color: var(--earth-red);
+    border-top: var(--pixel-border);
+    color: #fff;
+}
+
+.pixel-alert {
+    border: 2px solid #000;
+    border-radius: 0;
+    box-shadow: inset -2px -2px 0 rgba(0,0,0,0.18), inset 2px 2px 0 rgba(255,255,255,0.32);
+}
+
+.form-control::placeholder,
+.form-select {
+    color: inherit;
+}
+
+@media (max-width: 991.98px) {
+    .pixel-carousel img {
+        height: 360px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 72px;
+    }
+
+    .hero-section {
+        min-height: auto;
+    }
+}
+

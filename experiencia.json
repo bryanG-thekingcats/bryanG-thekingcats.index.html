@@ -1,0 +1,124 @@
+{
+  "destinos": [
+    {
+      "id": "uros",
+      "titulo": "Islas Flotantes de los Uros",
+      "categoria": "Lago Titicaca",
+      "descripcion": "Comunidades que viven sobre totora, preservando técnicas ancestrales y miradas únicas sobre el lago.",
+      "imagen": "https://www.cuscoperu.travel/wp-content/uploads/2020/07/The-Uros.jpg",
+      "detalle": "Navega entre islas de totora, conoce su arquitectura y disfruta del silencio del Titicaca.",
+      "ubicacion": "Lago Titicaca, Puno"
+    },
+    {
+      "id": "taquile",
+      "titulo": "Isla Taquile",
+      "categoria": "Islas",
+      "descripcion": "Paisaje andino, tejido tradicional y una gastronomía rica en sabores del altiplano.",
+      "imagen": "https://tse1.mm.bing.net/th/id/OIP.hEc6nO7e4KL8oZrUeOE9EgHaEx?cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "detalle": "Camina por senderos con vistas al lago y descubre los textiles de la comunidad local.",
+      "ubicacion": "Isla Taquile"
+    },
+    {
+      "id": "sillustani",
+      "titulo": "Chullpas de Sillustani",
+      "categoria": "Historia",
+      "descripcion": "Torres funerarias de piedra que narran la cosmovisión y la ingeniería de los antiguos pueblos.",
+      "imagen": "https://tse1.mm.bing.net/th/id/OIP.eqf_9R8KgNVrS2V7T7Pg8QHaE7?cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "detalle": "Observa las chullpas alineadas con el cielo y aprende sobre rituales funerarios andinos.",
+      "ubicacion": "Sillustani, Puno"
+    },
+    {
+      "id": "amananti",
+      "titulo": "Isla Amantaní",
+      "categoria": "Islas",
+      "descripcion": "Un destino de calma, cultura y tradicionales textilerías sobre el lago más alto del mundo.",
+      "imagen": "https://1.bp.blogspot.com/-3ltVa_5QLWI/YHD24f4AvaI/AAAAAAABsE0/mvfI5mqtz3c8cRyb3QPt3iH6hlqaZUCBQCLcBGAsYHQ/s960/amantani-puno5.jpg",
+      "detalle": "Disfruta senderos, terrazas y una convivencia comunitaria auténtica con la naturaleza.",
+      "ubicacion": "Isla Amantaní"
+    }
+  ],
+  "cultura": [
+    {
+      "id": "candelaria",
+      "titulo": "Virgen de la Candelaria",
+      "descripcion": "La festividad más emblemática de Puno, con procesiones, danzas y música de altiplano.",
+      "contenido": "La celebración reúne a miles de personas con trajes multicolor, música andina y desfiles que transforman la ciudad en una gran fiesta comunitaria."
+    },
+    {
+      "id": "huayno",
+      "titulo": "Danzas típicas y huayno",
+      "descripcion": "El huayno, la pandilla y las danzas rituales expresan la identidad de Puno y su energía colectiva.",
+      "contenido": "Desde la danza de tijeras hasta los pasos ceremoniales, cada movimiento cuenta historias de trabajo, fe y memoria."
+    },
+    {
+      "id": "vestimenta",
+      "titulo": "Vestimenta tradicional",
+      "descripcion": "Los tejidos de Puno reflejan símbolos, colores y técnicas heredadas de generación en generación.",
+      "contenido": "El uso de llamas, estrellas, zigzags y tonos del lago y la tierra confiere identidad visual y cultural a cada prenda."
+    }
+  ],
+  "gastronomia": [
+    {
+      "id": "chuño",
+      "titulo": "Chuño",
+      "descripcion": "Producto andino seco y resistente, base de la alimentación tradicional del altiplano.",
+      "ingredientes": "Chuño, agua, sal.",
+      "preparacion": "Se rehidrata, se cocina con verduras y se sirve como acompañamiento sustancioso y sabroso.",
+      "imagen": "https://tse3.mm.bing.net/th/id/OIP.WoRQyaXp-PdgFgJoUA-d9AHaE8?cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "cuy",
+      "titulo": "Cuy al horno",
+      "descripcion": "Plato emblemático de la cocina andina, preparado con especias y técnicas tradicionales.",
+      "ingredientes": "Cuy, ajo, comino, rocoto, hierbas.",
+      "preparacion": "Se cocina lentamente hasta lograr una textura crujiente y un sabor intenso.",
+      "imagen": "https://tse3.mm.bing.net/th/id/OIP.efr5CDihaEeqIJNCJZ__DwHaEy?cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
+    {
+      "id": "trucha",
+      "titulo": "Trucha de lago",
+      "descripcion": "Delicado pescado del Titicaca con una carne suave y muy apreciada regionalmente.",
+      "ingredientes": "Trucha, limón, hierbas, aceite, papa.",
+      "preparacion": "Se cocina a la plancha o al horno y se acompaña con papas y salsas locales.",
+      "imagen": "https://th.bing.com/th/id/R.7137e77178bfd0f28a8659b8afe20d8d?rik=Up29t3DvJZh7Vw&riu=http%3a%2f%2fblog.redbus.pe%2fwp-content%2fuploads%2f2017%2f11%2fTruchaFrita.jpg&ehk=AfH%2fZV8c%2fkFZePgHP13PfDwzmRCG%2bLZj9sLHaxcGZnQ%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "quinua",
+      "titulo": "Quinua andina",
+      "descripcion": "Grano nutritivo, servido en ensaladas, sopas y platos de acompañamiento.",
+      "ingredientes": "Quinua.",
+      "preparacion": "Se cocina en grano y se mezcla con ingredientes frescos para ofrecer un plato equilibrado.",
+      "imagen": "https://th.bing.com/th/id/R.356cdfa63e0e436a8b59789e49de57c4?rik=NCCuPx52MxboUw&pid=ImgRaw&r=0"
+    }
+  ],
+  "mapa": [
+    {
+      "id": "lago",
+      "nombre": "Lago Titicaca",
+      "descripcion": "El lago navegable más alto del mundo y la gran referencia natural de Puno.",
+      "x": 280,
+      "y": 185
+    },
+    {
+      "id": "uros",
+      "nombre": "Islas Flotantes",
+      "descripcion": "Islas construidas sobre totora con una cultura viva y sostenida en el lago.",
+      "x": 400,
+      "y": 160
+    },
+    {
+      "id": "sillustani",
+      "nombre": "Sillustani",
+      "descripcion": "Antiguas chullpas y observatorios alineados con la naturaleza y el cielo.",
+      "x": 570,
+      "y": 245
+    },
+    {
+      "id": "taquile",
+      "nombre": "Isla Taquile",
+      "descripcion": "Isla con paisajes lacustres, textiles y caminatas panorámicas.",
+      "x": 200,
+      "y": 320
+    }
+  ]
+}
