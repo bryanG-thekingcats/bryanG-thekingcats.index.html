@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Puno Turismo y Cultura: destinos, tradiciones, gastronomía e itinerarios interactivos.">
+    <meta name="keywords" content="Puno, Titicaca, turismo, cultura, gastronomía, viajes">
+    <meta property="og:title" content="Visite Puno - Turismo y Cultura">
+    <meta property="og:description" content="Descubre destinos, tradiciones y sabores de Puno con una experiencia interactiva.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:type" content="website">
+    <title>Visite Puno</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="day-mode">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top pixel-navbar" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand pixel-brand" href="#inicio">VISITE PUNO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cultura">Cultura</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gastronomia">Gastronomía</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#itinerario">Itinerario</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="badge rounded-pill pixel-badge">Turismo vivo</span>
+                        <button id="toggleTime" class="btn btn-pixel" type="button" aria-label="Cambiar modo de color" aria-pressed="false">🌙 Modo Noche</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main aria-label="Contenido principal">
+        <section id="inicio" class="hero-section">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <article class="col-lg-6">
+                        <span class="badge rounded-pill pixel-badge-soft mb-3">Puno · Titicaca · Tradición</span>
+                        <h1 class="display-4 pixel-title">Explora Puno bloque a bloque</h1>
+                        <p class="lead mb-4">Descubre paisajes del lago, comunidades vivas, tradiciones andinas y sabores que contagian.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#destinos" class="btn btn-pixel-primary btn-lg">Comenzar aventura</a>
+                            <a href="#itinerario" class="btn btn-pixel btn-lg">Planear viaje</a>
+                        </div>
+                        <div class="hero-stats row g-3 mt-4">
+                            <div class="col-4">
+                                <div class="stat-box pixel-card">
+                                    <div class="stat-number">12+</div>
+                                    <div class="stat-label">Destinos</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box pixel-card">
+                                    <div class="stat-number">4</div>
+                                    <div class="stat-label">Secciones</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box pixel-card">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Ideas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-lg-6">
+                        <div id="heroCarousel" class="carousel slide pixel-carousel" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="https://www.viajesmachupicchutours.com/wp-content/uploads/2022/08/puno-scaled.jpg" class="d-block w-100" alt="Lago Titicaca con montañas">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.aldianews.com/sites/default/files/articles/diabladaaldianews.jpg" class="d-block w-100" alt="Vista de islas del lago Titicaca">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://tse3.mm.bing.net/th/id/OIP.nS62nSyl3jAxhtr5fUARkQHaEN?cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="Paisaje andino de Puno">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinos" class="container py-5">
+            <div class="section-heading text-center mb-4">
+                <p class="eyebrow">Destinos turísticos</p>
+                <h2 class="pixel-title">Filtra por categoría</h2>
+                <p class="lead mb-0">Explora rutas de lago, historia y cultura con filtros en tiempo real.</p>
+            </div>
+
+            <div class="mb-4 d-flex flex-wrap gap-2 justify-content-center" id="filtrosDestinos"></div>
+
+            <div class="row g-4" id="destinosGrid"></div>
+
+            <aside class="mt-4 pixel-card p-4" aria-label="Detalle del destino seleccionado">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h3 class="h5 mb-0 pixel-title">Detalle activo</h3>
+                    <span class="badge rounded-pill pixel-badge-soft" id="detalleCategoria">Selección</span>
+                </div>
+                <p id="detalleDestino" class="mb-0">Selecciona un destino para ver una breve descripción y activar la guía.</p>
+            </aside>
+        </section>
+
+        <section id="cultura" class="container py-5">
+            <div class="section-heading text-center mb-4">
+                <p class="eyebrow">Cultura y tradiciones</p>
+                <h2 class="pixel-title">Acordeones de identidad</h2>
+                <p class="lead mb-0">Festividades, danzas y textiles en una guía interactiva y didáctica.</p>
+            </div>
+
+            <div class="row g-4 align-items-start">
+                <article class="col-lg-5">
+                    <div class="pixel-card p-4 h-100">
+                        <h3 class="h5 pixel-title">Puno vive en cada paso</h3>
+                        <p>La cultura de Puno se vive en los desfiles, en los tejidos, en el ritmo del huayno y en la unión de la comunidad.</p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">• Festividad de la Candelaria</li>
+                            <li class="mb-2">• Danzas de la sierra andina</li>
+                            <li class="mb-2">• Textiles con símbolos ancestrales</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="col-lg-7">
+                    <div class="accordion" id="culturaAccordion"></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gastronomia" class="container py-5">
+            <div class="section-heading text-center mb-4">
+                <p class="eyebrow">Gastronomía</p>
+                <h2 class="pixel-title">Sabores del altiplano</h2>
+                <p class="lead mb-0">Explora recetas típicas con detalles interactivos al hacer clic.</p>
+            </div>
+
+            <div class="row g-4" id="gastronomiaGrid"></div>
+        </section>
+
+        <section id="itinerario" class="container py-5">
+            <div class="section-heading text-center mb-4">
+                <p class="eyebrow">Itinerario interactivo</p>
+                <h2 class="pixel-title">Planea tu viaje</h2>
+                <p class="lead mb-0">Valida el formulario, estima tu presupuesto y genera un itinerario personalizado.</p>
+            </div>
+
+            <div class="row g-4">
+                <article class="col-lg-6">
+                    <form class="pixel-card p-4" id="itinerarioForm" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]+" placeholder="Tu nombre">
+                            <div class="invalid-feedback">Ingresa un nombre válido.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="email" name="email" required placeholder="correo@ejemplo.com">
+                            <div class="invalid-feedback">Ingresa un correo válido.</div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6 mb-3">
+                                <label for="dias" class="form-label">Días</label>
+                                <input type="number" class="form-control" id="dias" name="dias" min="2" max="10" value="4" required>
+                                <div class="invalid-feedback">Selecciona entre 2 y 10 días.</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="viajeros" class="form-label">Viajeros</label>
+                                <input type="number" class="form-control" id="viajeros" name="viajeros" min="1" max="8" value="2" required>
+                                <div class="invalid-feedback">Selecciona entre 1 y 8 viajeros.</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="preferencia" class="form-label">Preferencia de viaje</label>
+                            <select class="form-select" id="preferencia" name="preferencia" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="cultura">Cultura y tradiciones</option>
+                                <option value="naturaleza">Naturaleza y lago</option>
+                                <option value="gastronomia">Gastronomía</option>
+                            </select>
+                            <div class="invalid-feedback">Selecciona una preferencia.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="presupuesto" class="form-label">Presupuesto aproximado (USD)</label>
+                            <input type="range" class="form-range" id="presupuesto" name="presupuesto" min="300" max="3000" step="50" value="900">
+                            <div class="d-flex justify-content-between small"><span>Bajo</span><span id="presupuestoValor">900 USD</span><span>Alto</span></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-pixel-primary w-100">Generar itinerario</button>
+                    </form>
+                </article>
+
+                <article class="col-lg-6">
+                    <div class="pixel-card p-4 h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="h5 pixel-title mb-0">Resumen del viaje</h3>
+                            <span class="badge rounded-pill pixel-badge-soft" id="resumenEtiqueta">Estimado</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="alert alert-secondary pixel-alert" role="alert">
+                                Presupuesto estimado: <strong id="presupuestoEstimado">900 USD</strong>
+                            </div>
+                        </div>
+
+                        <div id="itinerarioResumen" class="pixel-list"></div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="pixel-footer">
+        <div class="container py-4">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2026 Visite Puno · Turismo, cultura y tradición.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Contacto: info@visitepuno.pe · +51 951 000 000</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="recetaModal" tabindex="-1" aria-labelledby="recetaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content pixel-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title pixel-title" id="recetaModalLabel">Receta</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalIngredientes" class="mb-2"></p>
+                    <p id="modalPreparacion"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
